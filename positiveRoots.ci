@@ -1,0 +1,60 @@
+program roots
+declare a,b,c;
+
+function discriminant(in a,in b,in c){
+    declare temp;
+    temp := b*b - 4*a*c;
+    return (temp);
+}
+
+function power2(in num){
+
+    return (num*num);
+}
+
+function sqrt(in num){
+    declare i;
+    i := 1;
+    while (i > 0){
+        if (power2(in i) <= num){
+            i := i + 1;
+        };
+        else{
+            i := i - 1;
+            return(i);
+        };
+        
+    };
+}
+
+procedure roots(in a,in b,in c){ #only positive roots#
+    declare temp,root1,root2;
+    temp := discriminant(in a,in b,in c);
+    if (temp = 0){
+        root1 := -b/(2*a);
+        print(root1);
+        
+    };
+    else if (temp > 0){
+        root1 := (-b + sqrt(in temp))/(2*a);
+        root2 := (-b - sqrt(in temp))/(2*a);
+        print(root1);
+        print(root2);
+        
+    };
+    else{
+        print(0);
+    };    
+    
+}
+
+{
+    #main#
+    input(a);
+    input(b);
+    input(c);
+    call roots(in a,in b,in c);
+    
+    
+
+}.

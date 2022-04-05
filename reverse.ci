@@ -1,0 +1,24 @@
+program test
+    declare a,b,c;
+    function mod10(in a){
+        
+        return(a - 10*(a/10));
+    }
+    function reverse(in b){
+        declare mod;
+        if (b < 10){
+            return (b);
+        };
+        while(b <> 0){
+            mod := mod*10 + mod10(in b);
+            b := b/10;
+        };
+        return(mod);
+        
+    }
+
+{
+    input(b);
+    c := reverse(in b);
+    print(c);
+}.

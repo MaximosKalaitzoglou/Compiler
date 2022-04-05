@@ -1,0 +1,17 @@
+program test1
+declare a,b;
+function p1(in a,in b){
+    declare p,u;
+    forcase
+        case(p > a){
+            p := p -1;; #two ; the second is valued as its own statement#
+
+        };
+    return(p);
+}
+
+{
+    a := 0;
+    b := 21;
+    print(p1(in a,in b));
+}.

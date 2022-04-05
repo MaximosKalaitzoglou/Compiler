@@ -1,0 +1,17 @@
+program max
+declare a,b,c,d,e;
+function p1(in a ,in b,inout c){
+    declare a;
+    a := 4;
+    return(a);
+}
+
+function p2(in x,in y,inout c,in a){
+    declare b;
+    b := 3;
+    return(b);
+}
+
+{
+    call p1(in a,in p2(in a,in b,inout c,in e),inout c);
+}.

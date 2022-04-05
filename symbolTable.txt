@@ -1,0 +1,15 @@
+Currently in scope : 0
+{"name": "a", "entype": "declare", "offset": 12}
+{"name": "b", "entype": "declare", "offset": 16}
+{"name": "f", "entype": "function", "offset": 16, "arguments": ["in", "a", "inout", "b"], "framelength": 20, "startQuad": 3, "scope": 1}
+Currently in scope : 1
+{"name": "a", "entype": "parameter", "parMode": "cv", "offset": 12}
+{"name": "b", "entype": "parameter", "parMode": "ref", "offset": 16}
+{"name": "b", "value": "a"}
+Currently in scope : 0
+{"name": "a", "entype": "declare", "offset": 12}
+{"name": "b", "entype": "declare", "offset": 16}
+{"name": "f", "entype": "function", "offset": 16, "arguments": ["in", "a", "inout", "b"], "framelength": 20, "startQuad": 3, "scope": 1}
+{"name": "a", "value": "1"}
+{"name": "T_0", "entype": "temp", "offset": 20}
+{"name": "a", "value": "T_0"}

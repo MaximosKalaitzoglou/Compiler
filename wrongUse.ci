@@ -1,0 +1,13 @@
+program test
+declare p1;
+
+function a(in p1){
+    declare o;
+    call o();
+    return (o);
+}
+
+{
+    p1 := a(in 4);
+
+}.

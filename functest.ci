@@ -1,0 +1,32 @@
+program test1
+
+declare a,b,c;
+function C1(in a,in c){
+    declare b;
+    a := a + c/2;
+    return (a);
+}
+
+function C2(in a,in x){
+    a := x*2;
+    return (a);
+}
+
+function A1(in y,inout v){
+    declare j;
+    incase
+        case(j > y){
+            j := j -1;
+        };
+        case(j < y){
+            j := j + 1;
+        };
+    
+    return(j);
+}
+
+{
+    a := 1;
+    b := 2;
+    c := C1(in C2(in A1(in C2(in a,in b),inout b),in a),in b);
+}.

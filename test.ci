@@ -1,0 +1,17 @@
+program test
+
+    declare a,b;
+  function f(in a,inout b){
+       b := a;
+       return(b);
+       
+
+        
+    }
+
+
+{
+    a := 1;
+    a := f(in a,inout b);
+    
+}.

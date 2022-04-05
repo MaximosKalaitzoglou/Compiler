@@ -1,0 +1,36 @@
+program triangle
+declare a,b,c;
+function power2(in num){
+
+    return (num*num);
+}
+
+function sqrt(in num){
+    declare i;
+    i := 1;
+    while (i > 0){
+        if (power2(in i) <= num){
+            i := i + 1;
+        };
+        else{
+            i := i - 1;
+            return(i);
+        };
+        
+    };
+}
+
+function pythagorean(in a,in b){
+    declare a2,b2,c2;
+    a2:= power2(in a);
+    b2 := power2(in b);
+    c2 := a2 + b2;
+    return (sqrt(in c2));
+}
+
+{
+    input(a);
+    input(b);
+    print(pythagorean(in a,in b));
+    
+}.
